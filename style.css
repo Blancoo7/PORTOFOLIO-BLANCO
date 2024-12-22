@@ -1,0 +1,676 @@
+* {
+    width: 100%;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth; 
+
+    }
+    @keyframes show {
+      from {
+        opacity: 0;
+        scale: 25%;
+      }
+      to {
+        opacity: 1;
+        scale: 100%;
+      }
+    }
+    img  {
+      view-timeline-name:--image ;
+      view-timeline-axis: block;
+
+      animation-timeline: --image;
+      animation-name: show;
+
+      animation-range: entry 25% cover 50%;
+      animation-fill-mode: both;
+
+    }
+    #incio, #menu, #scuno, #scdos, #tituloportfolio, #carouselExampleRide #sctres, #sccuatro, #collapseOne, #blanco, #todoinicio {
+      view-timeline-name:--image ;
+      view-timeline-axis: block;
+
+      animation-timeline: --image;
+      animation-name: show;
+
+      animation-range: entry 25% cover 50%;
+      animation-fill-mode: both;
+
+    }
+
+    @keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1 } }
+
+    @keyframes anim-up { 
+      from { opacity: 0; transform: translateY(100px); } 
+      to { opacity: 1; transform: translateY(0px); }  
+    }		
+    
+    @keyframes anim-down { 
+      from { opacity: 0; transform: translateY(-100px); } 
+      to { opacity: 1; transform: translateY(0px); }  
+    }		
+    
+    @keyframes anim-left { 
+      from { opacity: 0; transform: translateX(100px); } 
+      to { opacity: 1; transform: translateX(0px); }  
+    }		
+    
+    @keyframes anim-right { 
+      from { opacity: 0; transform: translateX(-100px); } 
+      to { opacity: 1; transform: translateX(0px); }  
+    }		
+    
+    .anim-up, .anim-down, .anim-left, .anim-right, .anim-fade-in {
+      animation-duration: 1s; 
+      animation-delay: 0.5s; 			
+      animation-fill-mode: both; 
+    }
+    
+    .anim-up { animation-name: anim-up; }
+    .anim-down { animation-name: anim-down; }
+    .anim-left { animation-name: anim-left; }
+    .anim-right { animation-name: anim-right; }
+    .anim-fade-in { animation-name: anim-fade-in; }
+    
+    .anim-pause-2 { animation-delay: 2s; }
+    .anim-pause-3 { animation-delay: 3s; }
+    .anim-pause-4 { animation-delay: 4s; } 
+    .anim-pause-5 { animation-delay: 5s; }
+    
+ 
+    .paused * { 
+      animation-play-state: paused;
+    }
+
+
+
+
+
+
+
+
+
+  @keyframes boton {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  
+  @keyframes blur-text {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes grande {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0) translateX(0);
+              transform: translateZ(0) translateY(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) translateY(-100px) translateX(100px);
+              transform: translateZ(160px) translateY(-100px) translateX(100px);
+    }
+  }
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #0076fd;
+  }
+  
+  
+  
+ 
+ body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+  }
+#inicio {
+    padding-top: 50px;
+    width: 100%;
+    height: 900px;
+
+}
+#inicio {
+    animation: opacity ease-in 3s ;
+}
+
+#inicio img {
+    width: 20%;
+    
+}
+#inicio img {
+    animation: opacity ease-in 3s ; 
+} 
+
+#img img {
+    margin-left: 80px;
+}
+#todoinicio{
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+#botonmenu button{
+    background-color: black;
+    animation: boton ease-in 3s;
+}
+
+#scuno{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    padding-bottom: 50px;
+    transition: all opacity 2s;
+}
+#scuno h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px;
+    animation: blur-text ease-in 6s;
+}
+#segundobloque{
+    display: flex;
+    animation: blur-text ease-in 6s;
+      
+}
+
+#correo{
+  margin-top: 150px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: nowrap; 
+}
+#blanco{
+    width: 5000px;
+    padding-left: 270px;
+    animation: opacity ease-in 3s ;
+}
+.btn-primary {
+    margin-left: -25px;
+    width: 150px;
+}
+.card4 a{
+    margin-top: 22px;
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card3 a{
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card2 a{
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card1 a{
+    margin-top: 22px;
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+#pribloque{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 90px;
+    animation: opacity ease-in 6s ;
+    
+}
+#segbloque{
+    display: flex;
+    flex-direction: row-reverse;
+    animation: opacity ease-in 8s ;
+    
+}
+#imgsecuno img{
+    width: 100%;
+    border-radius: 15px;
+    padding-right: 35px;
+    animation: opacity ease-in 6s ;
+}
+#imgsecdos img {
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 35px;
+}
+#scdos{
+    margin-top: 170px;
+    padding-bottom: 100px;
+    animation: opacity ease-in 9s ;
+}
+#scdos h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: opacity ease-in 9s ;
+}
+.carousel-control-prev{
+  left: 40em;
+
+}
+.carousel-control-prev-icon{
+  left: 80em;
+
+}
+#carouselExampleRide{
+    width: 60em;
+    
+}
+#carouselExampleRide{
+    padding-left: 35em;
+}
+
+
+#sctres{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    animation: opacity ease-in 9s ;
+}
+#sctres{
+    padding-bottom: 90px;
+}
+
+.card-body h5{
+    padding-top: 50px;
+}
+.card3 img{
+    height: 429px; 
+  object-fit: cover; 
+  width: 100%; 
+  
+}
+.card4 img{
+    height: 429px; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+#titulocuatro h3,h2{
+    font-size: 20px;
+display: flex;
+justify-content: center;
+padding-bottom: 20px;
+animation: blur-text ease-in 6s;
+}
+#infocuatro {
+   padding-top: 80px;
+   padding-bottom: 80px;
+        display: flex;
+       
+   
+}
+#infocuatro p{
+    display: flex;
+    justify-content: center;
+    animation: blur-text ease-in 6s;
+}
+.social-icons{
+    display: flex;
+    width: 130px;
+}
+#iconos {
+    display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        animation: boton ease-in 9s;
+        margin-bottom: 5em;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+input[type="color"] {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  * {
+    width: 100%;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+  }
+
+  
+  
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    text-align: center; 
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #0076fd;
+  }
+  
+  
+  
+ 
+ 
+#inicio {
+    padding-top: 50px;
+    width: 20%;
+    height: 600px;
+
+}
+#inicio {
+    animation: opacity ease-in 3s ;
+}
+
+#inicio img {
+  width: 30vh;
+    
+}
+#inicio img {
+    animation: opacity ease-in 3s ; 
+} 
+
+#img img {
+  margin-left: 50px;
+  width: 70px;
+}
+#creative {
+  font-size: 17px;
+}
+#todoinicio{
+  width: 100vh;
+  margin-top: 0px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+}
+#botonmenu{
+  padding-left:50px ;
+}
+#botonmenu button{
+    background-color: black;
+    animation: boton ease-in 3s;
+}
+
+#scuno{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    padding-bottom: 50px;
+    transition: all opacity 2s;
+}
+#scuno h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px;
+    animation: blur-text ease-in 6s;
+}
+#segundobloque{
+    display: flex;
+    animation: blur-text ease-in 6s;
+      
+}
+
+#correo{
+  margin-top: 150px;
+        margin-left: 90px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around; 
+}
+#correo p{
+  padding-right: 50vh;
+}
+
+
+#blanco{
+  padding-top: 50px;
+  padding-left: 10px;
+    
+    animation: opacity ease-in 3s ;
+}
+#blanco img{
+  width: 90vh;
+}
+.btn-primary {
+    margin-left: -25px;
+    width: 150px;
+}
+.card4 a{
+    margin-top: 22px;
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card3 a{
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card2 a{
+  margin-bottom: 50px;
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+.card1 a{
+    margin-top: 22px;
+    margin-left: 1px;
+    background-color: black;
+    animation: opacity ease-in 6s ;
+}
+#pribloque{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 90px;
+    animation: opacity ease-in 6s ;
+    
+}
+#segbloque{
+    display: flex;
+    flex-direction: row-reverse;
+    animation: opacity ease-in 8s ;
+    
+}
+#imgsecuno img{
+    width: 100%;
+    border-radius: 15px;
+    padding-right: 35px;
+    animation: opacity ease-in 6s ;
+}
+#imgsecdos img {
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 35px;
+}
+#scdos{
+    margin-top: 170px;
+    padding-bottom: 100px;
+    animation: opacity ease-in 9s ;
+}
+#scdos h1{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    animation: opacity ease-in 9s ;
+}
+#carouselExampleRide{
+  width: 25em;
+  padding-left: 10em;
+}
+
+
+
+#sctres{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  animation: opacity ease-in 9s;
+  flex-wrap: wrap;
+}
+#sctres{
+    padding-bottom: 90px;
+}
+
+.card-body h5{
+    padding-top: 50px;
+}
+.card3 img{
+    height: 429px; 
+  object-fit: cover; 
+  width: 100%; 
+  
+}
+.card4 img{
+    height: 429px; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+#titulocuatro h3,h2{
+    font-size: 20px;
+display: flex;
+justify-content: center;
+padding-bottom: 20px;
+animation: blur-text ease-in 6s;
+}
+#infocuatro {
+   padding-top: 80px;
+   padding-bottom: 80px;
+        display: flex;
+       
+   
+}
+#infocuatro p{
+    display: flex;
+    justify-content: center;
+    animation: blur-text ease-in 6s;
+}
+.social-icons{
+    display: flex;
+    width: 130px;
+}
+#iconos {
+    display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        animation: boton ease-in 9s;
+}
+
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+input[type="color"] {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+}
